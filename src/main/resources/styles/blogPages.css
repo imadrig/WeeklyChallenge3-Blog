@@ -3,9 +3,7 @@ body {
 }
 
 section {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    text-align: center!important;
 }
 
 main {
@@ -18,4 +16,9 @@ main {
 .imageCenter {
     padding-top: 20px;
     text-align: center;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
 }

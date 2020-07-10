@@ -11,6 +11,11 @@
 </head>
 
 <body>
+
+<section>
+    <img src="images/mcAPG.png" width="450" height="150">
+</section>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Bootcamp Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,16 +57,12 @@
     </div>
 </nav>
 
-<div class="imageCenter">
-    <img src="images/cssblog.jpg" width="780" height="405">
-</div>
+<div class="card" style="width: 70rem;">
+    <img src="images/cssblog.jpg" class="card-img-top" alt="Image Of HTML">
+    <div class="card-body">
+        <p class="card-text"><h1>Learn About CSS</h1> <br>
+        <h6>July 9, 2020</h6>
 
-<section>
-<h1>Learn CSS</h1>
-<h6>July 9, 2020</h6>
-</section>
-
-<main>
 <p>CSS (Cascading Style Sheets) is what makes web pages look good and presentable. It’s an essential part of modern web development and a must-have skill for any web designer and developer.</p><p>In this article, I’ll give you a quick introduction to help you get started with CSS.</p><p><strong>We’ve also launched a free full-length CSS course on Scrimba.</strong> <strong><a href="https://scrimba.com/g/gintrotocss?utm_source=freecodecamp.org&amp;utm_medium=referral&amp;utm_campaign=gintrotocss_5_minute_article">Click here to check it out.</a></strong></p><p>I’m assuming that you have a basic understanding of HTML, but other than that there are no prerequisites for this tutorial.</p><h3 id="getting-started">Getting Started</h3><p>Let’s start with learning how we can include CSS in our projects. There are typically three ways we do that.</p><h4 id="1-inline-css">1. Inline CSS</h4><p>First off, we can include CSS directly in our HTML elements. For this, we make use of the <code>style</code> attribute and then we provide properties to it.</p><!--kg-card-begin: code--><pre><code class="language-html">&lt;h1 style="color: blue"&gt; Hello world! &lt;/h1&gt;
 </code></pre><!--kg-card-end: code--><p>Here we’re giving it the property of <code>color</code>, and setting the value to <code>blue</code>, which results in the following:</p><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="https://cdn-media-1.freecodecamp.org/images/1*Ig1ubv9fGhYQauKUsi18YQ.png" class="kg-image"></figure><!--kg-card-end: image--><p>We can also set multiple properties inside the <code>style</code> tag if we wanted. However, I don’t want to continue down this path, as things start to get messy if our HTML is cluttered with lots of CSS inside it.</p><p>This is why the second method to include CSS was introduced.</p><h4 id="2-internal-css">2. Internal CSS</h4><p>The other way to include CSS is using the <code>style</code> element in the <code>head</code> section of the HTML document. This is called internal styling.</p><!--kg-card-begin: code--><pre><code class="language-html">&lt;head&gt;
     &lt;style&gt;
@@ -119,9 +120,9 @@ div {
 </code></pre><!--kg-card-end: code--><!--kg-card-begin: image--><figure class="kg-card kg-image-card"><img src="https://cdn-media-1.freecodecamp.org/images/1*OBQCn1lDTG8cskhUYwNTDg.png" class="kg-image"></figure><!--kg-card-end: image--><p>As you can see in the above example, we have a div element with the class of <code>container</code>. Inside this div, there is an <code>h1</code> tag with some text inside it.</p><p>In the stylesheet, we select the container class and set its <code>width</code>, <code>height</code>, <code>background-color</code>, and <code>text-align</code>.</p><p>Finally, we select the <code>.heading1</code> class — which is applied to the <code>h1</code> tag — and give it the attributes of <code>font-family</code> and <code>color</code>.</p><h3 id="conclusion">Conclusion</h3><p>You might feel a bit overwhelmed by all this information, but don’t worry. There are many resources available online.</p>
 
 Source: https://www.freecodecamp.org/news/get-started-with-css-in-5-minutes-e0804813fc3e/
-</main>
-
-
+        </p>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
