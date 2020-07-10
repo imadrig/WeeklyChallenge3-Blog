@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Bootcamp Blog: Uploading first GitHub Repository</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Bootcamp Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Github
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="historyOfGitHub.html">History of GitHub</a>
+                    <a class="dropdown-item" href="uploadingFirstGitHubRepository.html">Uploading Your First Repository</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    HTML & CSS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="gettingStartedWithHTML.html">Getting Started with HTML</a>
+                    <a class="dropdown-item" href="learnAboutCSS.html">Learn about CSS</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bootcampInfo.html">Bootcamp Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutAuthor.html">About Author</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<h1>Uploading Your First GitHub Repository</h1>
+<h6>June 22, 2020</h6>
+
+<h3>Make sure git is tracking your project.</h3>
+<br>
+<ol>
+
+<li>Using your terminal/command line, get inside the folder where your project files are kept: cd /path/to/my/codebase.<br>
+    You cannot do this simply by opening the folder normally, you must do this with the command line/terminal.</li>
+<br>
+
+<li>Check if git is already initialized: git status<br>
+    If you get this error message: fatal: Not a git repository (or any of the parent directories): .git, that means the folder you are currently in is not being tracked by git. In that case, initialize git inside your project folder by typing git init, then going through the process of adding and committing your project.</li>
+<br>
+
+If you get another error message, read carefully what it says. Is it saying git isn't installed on your computer by saying that the word 'git' is not recognized? Is it saying that you're already in a folder or sub-folder where git is initialized? Google your error and/or output to understand it, and to figure out how to fix it.
+</ol>
+<br>
+<h3>Create a remote, empty folder/repository on Github.</h3>
+
+<ol>
+    <li>Login to your Github account.</li>
+    <br>
+    <li>At the top right of any Github page, you should see a '+' icon. Click that, then select 'New Repository'.</li>
+    <br>
+    <li>Give your repository a name--ideally the same name as your local project. If I'm building a travel application, its folder will be called 'travel-app' on my computer, and 'travel-app' will be the Github repository name as well.</li>
+    <br>
+    <li>Click 'Create Repository'. The next screen you see will be important, so don't close it.</li>
+</ol>
+<br>
+<h3>Connect your local project folder to your empty folder/repository on Github.</h3>
+
+The screen you should be seeing now on Github is titled 'Quick setup — if you’ve done this kind of thing before'.
+<br>
+Copy the link in the input right beneath the title, it should look something like this: https://github.com/mindplace/test-repo.git This is the web address that your local folder will use to push its contents to the remote folder on Github.
+<ol>
+    <li>Go back to your project in the terminal/command line.</li>
+
+    <li>In your terminal/command line, type git remote add origin [copied web address]</li>
+
+
+Example: git remote add origin https://github.com/mindplace/test-repo.git
+
+    <li>Push your branch to Github: git push origin master</li>
+
+    <li>Go back to the folder/repository screen on Github that you just left, and refresh it. The title 'Quick setup — if you’ve done this kind of thing before' should disappear, and you should see your files there.</li>
+</ol>
+
+Source:
+https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
