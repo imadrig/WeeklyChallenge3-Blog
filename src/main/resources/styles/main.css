@@ -1,12 +1,17 @@
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101_1280.jpg");
+    /*https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(92,92,92,0.10);
 }
 
 section {
-    height: 50px !important;
+    height: 10px !important;
     background-color: rgba(0,0,0,0.3)!important;
     text-align: center!important;
     color: white;
+    padding-bottom: 50px;
 }
 
 h1{
