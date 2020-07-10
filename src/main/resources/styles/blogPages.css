@@ -1,0 +1,16 @@
+section {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+main {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imageCenter {
+    text-align: center;
+}
