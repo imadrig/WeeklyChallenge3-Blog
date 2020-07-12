@@ -1,13 +1,26 @@
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2019/10/03/12/12/programmer-4523101_1280.jpg") !important;
+    background-image: url("../images/backgroundFinal.jpeg");
     background-position: center;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
     background-color: rgba(92,92,92,0.10);
 }
 
 section {
     text-align: center!important;
+    background-color: rgba(92,92,92,.10) !important;
+    margin-top: auto;
 }
 
+.carousel {
+    width:640px;
+    height:360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    /*background-color: white;*/
+}
 
+.navbar navbar-expand-lg navbar-light bg-light {
+    text-align: center;
+}

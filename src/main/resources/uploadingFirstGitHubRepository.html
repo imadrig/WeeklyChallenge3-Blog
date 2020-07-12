@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="styles/blogPages.css">
     <title>Bootcamp Blog: Uploading first GitHub Repository</title>
 </head>
+
 <body>
 
+<!--Top of page: Logo-->
 <section>
-    <img src="images/mcAPG.png" width="450" height="150">
+    <img src="images/mcAPG.png" alt="iamge of MC & AGP Blog Logo"width="400" height="130">
 </section>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Bootcamp Blog</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mx-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
@@ -51,9 +49,9 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="coreJava.html">Core Java</a>
+                    <a class="dropdown-item" href="oopJava.html">Object Oriented Programming</a>
                     <div class="dropdown-divider"></div>
                 </div>
-            </li>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="bootcampInfo.html">Bootcamp Information</a>
@@ -65,59 +63,61 @@
     </div>
 </nav>
 
-<div class="card" style="width: 65rem;">
+<!--Start of Article-->
+<div class="card" style="width: 60rem;">
     <img src="images/gitBlogPage.jpg" class="card-img-top" alt="Image Of HTML">
     <div class="card-body">
         <p class="card-text"><h1>Uploading Your First GitHub Repository</h1> <br>
         <h6>June 22, 2020</h6>
 
-<h3>Make sure git is tracking your project.</h3>
-<br>
-<ol>
+        <!--Article Info taken from Online Source-->
+        <h3>Make sure git is tracking your project.</h3>
+        <br>
+        <ol>
 
-<li>Using your terminal/command line, get inside the folder where your project files are kept: cd /path/to/my/codebase.<br>
-    You cannot do this simply by opening the folder normally, you must do this with the command line/terminal.</li>
-<br>
+        <li>Using your terminal/command line, get inside the folder where your project files are kept: cd /path/to/my/codebase.<br>
+            You cannot do this simply by opening the folder normally, you must do this with the command line/terminal.</li>
+        <br>
 
-<li>Check if git is already initialized: git status<br>
-    If you get this error message: fatal: Not a git repository (or any of the parent directories): .git, that means the folder you are currently in is not being tracked by git. In that case, initialize git inside your project folder by typing git init, then going through the process of adding and committing your project.</li>
-<br>
+        <li>Check if git is already initialized: git status<br>
+            If you get this error message: fatal: Not a git repository (or any of the parent directories): .git, that means the folder you are currently in is not being tracked by git. In that case, initialize git inside your project folder by typing git init, then going through the process of adding and committing your project.</li>
+        <br>
 
-If you get another error message, read carefully what it says. Is it saying git isn't installed on your computer by saying that the word 'git' is not recognized? Is it saying that you're already in a folder or sub-folder where git is initialized? Google your error and/or output to understand it, and to figure out how to fix it.
-</ol>
-<br>
-<h3>Create a remote, empty folder/repository on Github.</h3>
+        If you get another error message, read carefully what it says. Is it saying git isn't installed on your computer by saying that the word 'git' is not recognized? Is it saying that you're already in a folder or sub-folder where git is initialized? Google your error and/or output to understand it, and to figure out how to fix it.
+        </ol>
+        <br>
+        <h3>Create a remote, empty folder/repository on Github.</h3>
 
-<ol>
-    <li>Login to your Github account.</li>
-    <br>
-    <li>At the top right of any Github page, you should see a '+' icon. Click that, then select 'New Repository'.</li>
-    <br>
-    <li>Give your repository a name--ideally the same name as your local project. If I'm building a travel application, its folder will be called 'travel-app' on my computer, and 'travel-app' will be the Github repository name as well.</li>
-    <br>
-    <li>Click 'Create Repository'. The next screen you see will be important, so don't close it.</li>
-</ol>
-<br>
-<h3>Connect your local project folder to your empty folder/repository on Github.</h3>
+        <ol>
+            <li>Login to your Github account.</li>
+            <br>
+            <li>At the top right of any Github page, you should see a '+' icon. Click that, then select 'New Repository'.</li>
+            <br>
+            <li>Give your repository a name--ideally the same name as your local project. If I'm building a travel application, its folder will be called 'travel-app' on my computer, and 'travel-app' will be the Github repository name as well.</li>
+            <br>
+            <li>Click 'Create Repository'. The next screen you see will be important, so don't close it.</li>
+        </ol>
+        <br>
+        <h3>Connect your local project folder to your empty folder/repository on Github.</h3>
 
-The screen you should be seeing now on Github is titled 'Quick setup — if you’ve done this kind of thing before'.
-<br>
-Copy the link in the input right beneath the title, it should look something like this: https://github.com/mindplace/test-repo.git This is the web address that your local folder will use to push its contents to the remote folder on Github.
-<ol>
-    <li>Go back to your project in the terminal/command line.</li>
+        The screen you should be seeing now on Github is titled 'Quick setup — if you’ve done this kind of thing before'.
+        <br>
+        Copy the link in the input right beneath the title, it should look something like this: https://github.com/mindplace/test-repo.git This is the web address that your local folder will use to push its contents to the remote folder on Github.
+        <ol>
+            <li>Go back to your project in the terminal/command line.</li>
 
-    <li>In your terminal/command line, type git remote add origin [copied web address]</li>
+            <li>In your terminal/command line, type git remote add origin [copied web address]</li>
 
 
-Example: git remote add origin https://github.com/mindplace/test-repo.git
+        Example: git remote add origin https://github.com/mindplace/test-repo.git
 
-    <li>Push your branch to Github: git push origin master</li>
+            <li>Push your branch to Github: git push origin master</li>
 
-    <li>Go back to the folder/repository screen on Github that you just left, and refresh it. The title 'Quick setup — if you’ve done this kind of thing before' should disappear, and you should see your files there.</li>
-</ol>
+            <li>Go back to the folder/repository screen on Github that you just left, and refresh it. The title 'Quick setup — if you’ve done this kind of thing before' should disappear, and you should see your files there.</li>
+        </ol>
 
-Source:
-https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
+        Source:
+        https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad
         </p>
     </div>
 </div>

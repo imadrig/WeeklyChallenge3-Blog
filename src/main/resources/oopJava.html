@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/blogPages.css">
+    <title>Bootcamp Blog: OOP Java</title>
+</head>
+
+<body>
+
+<!--Top of page: Logo-->
+<section>
+    <img src="images/mcAPG.png" alt="iamge of MC & AGP Blog Logo"width="400" height="130">
+</section>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Github
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="historyOfGitHub.html">History of GitHub</a>
+                    <a class="dropdown-item" href="uploadingFirstGitHubRepository.html">Uploading Your First Repository</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    HTML & CSS
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="gettingStartedWithHTML.html">Getting Started with HTML</a>
+                    <a class="dropdown-item" href="learnAboutCSS.html">Learn about CSS</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Java
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="coreJava.html">Core Java</a>
+                    <a class="dropdown-item" href="oopJava.html">Object Oriented Programming</a>
+                    <div class="dropdown-divider"></div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="bootcampInfo.html">Bootcamp Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutAuthor.html">About Author</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Start of Article-->
+<div class="card" style="width: 60rem;">
+    <img src="images/oopJavaBlog.jpg" class="card-img-top" alt="Image Of Java">
+    <div class="card-body">
+        <p class="card-text"><h1>Java Object-Oriented Programming</h1>
+        <br>
+        <h6>July 1, 2020</h6>
+        <!--Article Info taken from Online Source-->
+        <p>OOP Concepts has become an important part of software
+            development. Writing Programs using Top down approach of traditional structured
+            programming or Functional Programming method becomes difficult as the
+            complexity of the program increases. This is where Object-Oriented Programming (OOP)
+            comes in handy. </p>
+
+        <p>OOP Concepts allows you to break these complex programs into
+            small bytes, which you can solve one by one. OOP is an effective model that
+            allows your program to grow without becoming impossible to maintain. Add to it the
+            ubiquity of languages like Java, and OOP Principles becomes need of the hour.</p>
+
+        <p>OOP
+            is a whole new way of addressing problems. Here you create a class, instead of
+            writing a program, which has variables and functions. </p>
+
+        <p>Objects
+            are self-contained examples of that class and you have a control where you can
+            make them interact with each other in many ways. This kind of encapsulation
+            makes knowledge of Object-Oriented Programming and its main Principles a must
+            if you are serious about working on big projects and developing software for
+            mobiles. </p>
+
+        <p>
+            There are many important features of Object-Oriented Programming. However, before proceeding further, we suggest you read
+            <a href="https://blog.simpliv.com/blog/how-to-learn-java-from-scratch-in-2019/">
+                <strong>Learn 7 Basics of Java Programming to Start Coding Today</strong>
+            </a>
+            which helps you to know all the basic concepts of Java.
+        </p>
+
+        <p style="color:#23acb3">
+            <strong>Our discussion in this blog follows
+                this structure</strong>
+            :
+        </p>
+
+        <ul>
+            <li>
+                <h2 style="font-size:20px;color:green;margin-top: 0px;margin-bottom: 0px !important">What are OOP concepts?</h2>
+            </li>
+            <li>
+                <h2 style="font-size:20px;color:green;margin-top: 0px;margin-bottom: 0px!important">What are the best practices of OOP concept?</h2>
+            </li>
+            <li>
+                <h2 style="font-size:20px;color:green;margin-top: 0px;margin-bottom: 0px !important">Advantages of Java OOP concepts</h2>
+            </li>
+            <li>
+                <h2 style="font-size:20px;color:green;margin-top: 0px;margin-bottom: 0px !important">Differences between object oriented and object-based program.</h2>
+            </li>
+        </ul>
+
+        <p>Let
+            us dive right into the main Principles of Object-Oriented Programming and
+            discuss them with relevant examples.</p>
+
+        <p>
+        <p style="color:#23acb3">
+            <strong>What are OOP Concepts?</strong>
+        </p>
+        </p>
+
+        <p>Object
+            Oriented Programming is a method based on the concepts of “objects” which
+            contain data and methods. Its main objective is to bring flexibility in
+            programming while building small and large software applications. Most of the
+            programming language like Java, C++, Python, C#, etc. follow OOP concepts.</p>
+
+        <figure class="wp-block-image">
+            <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/oopsconcepts.png" alt="Object-oriented concepts in Java" class="wp-image-352" srcset="https://blog.simpliv.com/wp-content/uploads/2019/07/oopsconcepts.png 350w, https://blog.simpliv.com/wp-content/uploads/2019/07/oopsconcepts-300x214.png 300w" sizes="(max-width: 350px) 100vw, 350px"/>
+        </figure>
+
+        <p style="color:#23acb3">
+            <strong>We will address the following OOP
+                Concepts in Java</strong>
+            :
+        </p>
+
+        <ul>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important">Object</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> Class</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> What are all the differences between Object and Class?</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> Inheritance</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> Polymorphism</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> Encapsulation</h3>
+            </li>
+            <li>
+                <h3 style="font-size:15px;margin-top:0px;margin-bottom:0px !important"> Abstraction</h3>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Object</strong>
+                </p>
+            </li>
+        </ul>
+
+        <p>What is an Object? It is a commonly asked
+            question. An object is an entity which has both state and behavior. An object can
+            be defined as an instance of a class, which contains the address and takes up
+            some space in the memory. </p>
+
+        <figure class="wp-block-image">
+            <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/instance.png" alt="Object is an instance of a class" class="wp-image-351"/>
+        </figure>
+
+        <p>
+            <strong>Some
+                of the key points of objects are:</strong>
+        </p>
+
+        <ul>
+            <li>It has a state</li>
+            <li>It has a behavior</li>
+            <li>It has an identity.</li>
+        </ul>
+
+        <p>
+            <strong>Consider
+                an example to understand what is an object:</strong>
+            <br>
+        </p>
+
+        <p>Consider writing pen as an example. Here, pen
+            is an object and its name is Reynolds, and color is white, known as its state. Pen
+            is used to write is its behavior.</p>
+
+        <div class="wp-block-image">
+            <figure class="alignright">
+                <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/writtingpen-1.png" alt="Pen is an example of an Object" class="wp-image-743" srcset="https://blog.simpliv.com/wp-content/uploads/2019/07/writtingpen-1.png 200w, https://blog.simpliv.com/wp-content/uploads/2019/07/writtingpen-1-80x60.png 80w" sizes="(max-width: 200px) 100vw, 200px"/>
+            </figure>
+        </div>
+
+        <p>
+            A keyword
+            <em>“new”</em>
+
+            is used to create objects in Java.
+        </p>
+
+        <p>
+            <strong>Object
+                is created with the following syntax:</strong>
+        </p>
+
+        <p>className ReferenceVariable = new
+            ClassName();</p>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Class:</strong>
+                </p>
+            </li>
+        </ul>
+
+        <p>
+            What is a Class? It is another commonly asked
+            question by the community. A Class can be considered as blueprint using which many numbers
+            of objects can be created. It is a group of objects which have common
+            properties. Class contains
+            <strong>variables and
+                methods</strong>
+            to describe the behavior of an object.
+        </p>
+
+        <p>
+            <strong>Consider a house as an example to understand
+                what is class:</strong>
+            <br>
+        </p>
+
+        <div class="wp-block-image">
+            <figure class="alignright">
+                <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/house.png" alt="House is an example of an Object" class="wp-image-350"/>
+            </figure>
+        </div>
+
+        <p>Here,
+            the house is the object. All the properties of the house such as floors, doors,
+            window, etc. can be considered as the different classes. </p>
+
+        <p>
+            <strong>Syntax to declare class is:</strong>
+        </p>
+
+        <p>
+
+            class
+            <br>
+
+            {
+            <br>
+
+            Field;
+            <br>
+
+            Methods;
+            <br>
+
+            }
+        </p>
+
+        <p>
+            <strong>A Class in Java contains:</strong>
+        </p>
+
+        <ul>
+            <li>Fields</li>
+            <li>Methods</li>
+            <li>Constructors</li>
+            <li>Blocks</li>
+            <li>Nested class and interface.</li>
+        </ul>
+
+        <p style="color:#23acb3">
+            <strong>What
+                is the difference between Object and Class?</strong>
+        </p>
+
+        <p>Object and Class are the main concepts of Objecting Oriented Programming
+            concepts. We will discuss some of the difference between these two concepts:</p>
+
+        <table class="wp-block-table">
+            <tbody>
+            <tr>
+                <td>
+                    <strong>Object</strong>
+                </td>
+                <td>
+                    <strong>Class</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>Object is the instance of a class.   </td>
+                <td>Class is blueprint or a template from which objects will be created.   </td>
+            </tr>
+            <tr>
+                <td>
+                    An object is self-contained component
+                    <br>
+                    which consists methods and properties which help in making a certain type of data useful.
+                </td>
+                <td>A class is an entity which determines how the object will behave and what&nbsp;it contains.   </td>
+            </tr>
+            <tr>
+                <td>An object can be created many times as per the requirement.   </td>
+                <td>A class is declared only once.    </td>
+            </tr>
+            <tr>
+                <td>An object allocates memory whenever it is created.   </td>
+                <td>A class doesn’t take memory whenever it is created.   </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p>Once we have learned the Object
+            and Class, then we will see further OOPs Concepts of Java.</p>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Inheritance</strong>
+                    :
+                </p>
+            </li>
+        </ul>
+
+        <p>
+            It can be defined as the process where one class acquires the
+            properties of another class using a keyword called ‘
+            <strong>extends’</strong>
+            . Here, the class which inheritance the properties of other
+            class is called ‘
+            <strong>subclass’,</strong>
+            and the
+            class whose properties are inherited are called ‘
+            <strong>superclass’</strong>
+            .
+        </p>
+
+        <p>Inheritance is mainly used for code reusability. So, here you are making use of existing classes and further extending on that. Let us look into a programming example of inheritance concept. </p>
+
+        <p>
+            <strong>Let us look for a sample inheritance program.</strong>
+        </p>
+
+        <p>
+            <strong>package</strong>
+            com.inheritance;
+            <br>
+            <strong>class</strong>
+            Teamlead{
+            <br>
+            <strong>float</strong>
+            salary=60000;
+            <br>
+            }
+            <br>
+            <strong>class</strong>
+            Javaprogrammer
+            <strong>extends</strong>
+            Teamlead{
+            <br>
+            <strong>public</strong>
+            <strong>static</strong>
+            <strong>void</strong>
+            main(String args[]){
+            <br>
+            Javaprogrammer p=
+            <strong>new</strong>
+            Javaprogrammer();
+            <br>
+            System.
+            <em>out</em>
+            .println(&#8220;Java programmer salary is:&#8221;+p.salary);
+            <br>
+            }
+            <br>
+            }
+        </p>
+
+        <p>
+            <strong>Output:</strong>
+            Java programmer salary is: 60000.0
+        </p>
+
+        <p style="color: #23acb3">
+            <strong>Different types of inheritance:</strong>
+        </p>
+
+        <ol type="1">
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Single inheritance:</span>
+                    </strong>
+                    It is a type of inheritance in which one class inheritance the property of another class.
+                    <strong></strong>
+                </p>
+            </li>
+
+            <p style="color:#23acb3">
+                <strong>Let us the see the syntax: </strong>
+            </p>
+
+            Class A
+            <br>
+
+            {
+            <br>
+
+            &#8212;-
+            <br>
+
+            }
+            <br>
+
+            Class B extends A {
+            <br>
+
+            &#8212;-
+            <br>
+
+            }
+
+
+
+            <div class="wp-block-image">
+                <figure class="aligncenter is-resized">
+                    <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/classa_classb.png" alt="Single inheritance in Java" class="wp-image-347" width="130" height="216"/>
+                </figure>
+            </div>
+
+            <p>
+                <strong>
+                    <br>
+                </strong>
+            </p>
+
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3"> Multilevel inheritance: </span>
+                    </strong>
+                    In this type of inheritance one class is derived from a class which is also derived from another class i.e., a class is having more than one parent class but at different levels.
+                    <strong></strong>
+                </p>
+            </li>
+
+            <p style="color:#23acb3">
+                <strong>Let us see the syntax:</strong>
+                <br>
+            </p>
+
+            <p>
+
+                Class A {
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+
+                Class B extends A{
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+
+                Class C extends B{
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+            </p>
+
+            <div class="wp-block-image">
+                <figure class="aligncenter">
+                    <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/classa_b_c.png" alt="Multiple inheritance in Java" class="wp-image-346" srcset="https://blog.simpliv.com/wp-content/uploads/2019/07/classa_b_c.png 150w, https://blog.simpliv.com/wp-content/uploads/2019/07/classa_b_c-129x300.png 129w" sizes="(max-width: 150px) 100vw, 150px"/>
+                </figure>
+            </div>
+
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Hierarchical inheritance: </span>
+                    </strong>
+                    It is a type of inheritance in which a class has more than one child class or in other words, more than one child class have the same parent class.
+                </p>
+            </li>
+
+            <p style="color:#23acb3">
+                <strong>Let us see the syntax:</strong>
+            </p>
+
+            <p>
+
+                Class A {
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+
+                Class B extends A {
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+
+                Class C extends A {
+                <br>
+
+                &#8212;
+                <br>
+
+                }
+                <br>
+            </p>
+
+            <div class="wp-block-image">
+                <figure class="aligncenter">
+                    <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/classa-b-c.png" alt="Hierarchical inheritance in Java" class="wp-image-348"/>
+                </figure>
+            </div>
+
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Hybrid inheritance:</span>
+                    </strong>
+                </p>
+            </li>
+        </ol>
+
+        <p>It is a combination of multiple
+            inheritance and multilevel inheritance. </p>
+
+        <figure class="wp-block-image">
+            <img src="https://blog.simpliv.com/wp-content/uploads/2019/07/class-a-b-c-d.png" alt="Hybrid inheritance in Java" class="wp-image-349" srcset="https://blog.simpliv.com/wp-content/uploads/2019/07/class-a-b-c-d.png 300w, https://blog.simpliv.com/wp-content/uploads/2019/07/class-a-b-c-d-150x150.png 150w" sizes="(max-width: 300px) 100vw, 300px"/>
+        </figure>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Polymorphism</strong>
+                    :
+                    <strong></strong>
+                </p>
+            </li>
+        </ul>
+
+        <p>It is an Object-Oriented Programming feature which allows the
+            programmer to perform a single action in many ways. The common use of
+            polymorphism is when a parent class reference is used to refer a child class
+            object. </p>
+
+        <p style="color:#23acb3">
+            <strong>Different types of polymorphism:</strong>
+        </p>
+
+        <ul>
+            <li>
+                <strong>
+                    <span style="color:#23acb3">Static polymorphism:</span>
+                </strong>
+                This is a type of
+                polymorphism which gets resolved during compilation. It is also called compile time
+                polymorphism.
+            </li>
+            <li>
+                <strong>
+                    <span style="color:#23acb3">Dynamic polymorphism:</span>
+                </strong>
+                This is a type of
+                polymorphism in which a call to an overridden method is resolved at runtime. So,
+                it is called runtime polymorphism.
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Encapsulation</strong>
+                    :
+                    <strong></strong>
+                </p>
+            </li>
+        </ul>
+
+        <p>Encapsulation means binding object state and behavior together.
+            It is a mechanism of wrapping the data (variable) and code acting on the data
+            (methods) together as a single unit. It is a called as data hiding as variables
+            of a class will be hidden from other classes and can be accessed only through
+            the methods of their current class.</p>
+
+        <p>An
+            encapsulated class can be created by making all the data members of the class
+            private.</p>
+
+        <ul>
+            <li>
+                <p style="color:#23acb3">
+                    <strong>Abstraction</strong>
+                    :
+                    <strong></strong>
+                </p>
+            </li>
+        </ul>
+
+        <p>Abstraction is a process of hiding the implementation details
+            from the user, here only the functionality will be provided to the user. Abstract
+            class contains ‘abstract’ keyword. Here, you show only relevant data and hide unnecessary
+            details of an object from the user.</p>
+
+        <p style="color:#23acb3">
+            <strong>Let us discuss Abstraction
+                with an example:</strong>
+        </p>
+
+        <p>Consider
+            an example wherein you are using your bank account online, to login you will
+            enter your user_id and password and then press the login button, after pressing
+            the login button you will not know how the input data is sent to the server and
+            how it gets verified as all this information is abstracted away from you.</p>
+
+        <p style="color:#23acb3">
+            <strong>What are the best practices of OOP Concept?</strong>
+        </p>
+
+        <p>The overall vision of implementing Object-Oriented
+            Program is to develop a secure and more reliable software application. This
+            requires following some proper guidelines while writing the programs which we
+            will discuss below:</p>
+
+        <ul>
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Single responsibility: </span>
+                    </strong>
+                    One of the important best practices that every developer needs to follow
+                    is the “Single Responsibility Principle”. Here, in Object Oriented Programming,
+                    the class should always have one functionality so that it is called or extended
+                    whenever new usage arises without causing coupling between different
+                    functionalities
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Open closed design: </span>
+                    </strong>
+                    This principle says that
+                    keep all the methods and classes need to be closed for modifications but open
+                    for extensions. It means to create software entities whose behavior can be
+                    changed without editing and recompiling the code itself
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>
+                        <span style="color:#23acb3">Liskov Substitution Principle:</span>
+                    </strong>
+                    This
+                    principle states that subtypes may be substitutable for their base types
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>
+                                                                                                                <span style="color:#23acb3">Interface Segregation
+                                                                                                                Principle: </span>
+                    </strong>
+                    This principle states that a client should not implement an interface if
+                    it doesn’t use that
+                </p>
+            </li>
+            <li>
+                <p>
+                    <strong>
+                                                                                                                <span style="color:#23acb3">Dependency Inversion
+                                                                                                                Principle: </span>
+                    </strong>
+                    This principle states that high-level modules, which provides complex
+                    logic, should be easily reusable and they need to be unaffected by the changes
+                    in low level modules, which provides utility features. Abstraction can be used
+                    which decouples high-level and low-level modules from each other.
+                </p>
+            </li>
+        </ul>
+
+        <p style="color:#23acb3">
+            <strong>Advantages of Java OOP Concepts:</strong>
+        </p>
+
+        <ul>
+            <li>OOP Concepts reduces the complexity in coding and presents a
+                good program structure </li>
+            <li>As per the requirements adding new features or responding to
+                changing operating environments can be easily done by introducing a few new objects
+                and precisely modifying the existing code without affecting the present code.</li>
+            <li>OOP introduces the reusability function as objects can be
+                reused across applications which helps in faster development</li>
+            <li>OOP provides modular structure for programs wherein abstract
+                datatypes can be defined which helps to hide the implementation details.</li>
+        </ul>
+
+        <p style="color:#23acb3">
+            <strong>Differences between object oriented and object-based
+                program:</strong>
+        </p>
+
+        <p>There are few differences exists between Object-Oriented
+            Programming and Object-Based Programming Language.</p>
+
+        <table class="wp-block-table">
+            <tbody>
+            <tr>
+                <td>
+                    <strong>Object-Oriented Programming Concept </strong>
+                </td>
+                <td>
+                    <strong>Object-Based Programming Concept</strong>
+                </td>
+            </tr>
+            <tr>
+                <td>In this type, all the principles of Object-Oriented Programming Concept are supported.</td>
+                <td>
+                    In this type, some of the principles
+                    of Object-Oriented Concept such as inheritance and polymorphism are not
+                    supported.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    This type of programming languages
+                    does not have a built-in object.
+                </td>
+                <td>
+                    This type of programming languages
+                    have built-in objects.
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <p style="color:#23acb3">
+            <strong>Conclusion:</strong>
+        </p>
+
+        <p>In
+            this Java blog, we have discussed some of the OOPs concepts like Object, Class,
+            Inheritance, Polymorphism, Encapsulation, and Abstraction. Along with this, we
+            have also seen the advantages of OOP Concept and many other topics.</p>
+
+        <p>Hope this helped!</p>
+        Source: https://blog.simpliv.com/object-oriented-programming-concepts/
+
+        </p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
